@@ -3,7 +3,7 @@
 > Modified on : 24/Jan/2021
 ___
 
-# Basic git commands
+# Basics of git
 
 ## 1. Installing git on ubuntu/debian.
 
