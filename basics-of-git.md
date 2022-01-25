@@ -62,6 +62,29 @@ git config --global init.defaultBranch <new_default_branch_name>
 git config --list --show-origin
 ```
 
+### 2.5 Saving your credential while using https connection
+
+#### `Setting credential in remote repository url`
+
+```sh
+https://Username`**:**`Password`**@**`github.com/myRepoDir/myRepo.git`
+```
+
+#### `using credential.helper`
+
+```sh
+git config --local credential.helper store 	# To store permenently.
+
+git config --local credential.helper 'cache --timeout=10800'	# Store for next 3 hours.
+```
+This will store the username and password in .git-credentials file.
+
+[Read more](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage)
+
+
+
+
+
 ## 3. Help in git
 
 #### There are three ways to see the help.
