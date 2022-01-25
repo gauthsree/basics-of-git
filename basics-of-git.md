@@ -163,6 +163,7 @@ git rm --cached
 
 ```sh
 git stash
+git stash pop
 ```
 
 [Read more](https://git-scm.com/docs/git-stash)
