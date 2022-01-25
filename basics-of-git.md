@@ -220,3 +220,7 @@ git checkout <branch_name>
 git merge <branch_name>
 ```
 
+
+## References
+
+* https://www.javatpoint.com/git
