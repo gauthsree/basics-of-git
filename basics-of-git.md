@@ -183,6 +183,7 @@ git checkout <branch_name>
 	* Resolve
 	* Subtree
 
+[see more](https://www.geeksforgeeks.org/merge-strategies-in-git/)
 ```sh
 git merge <branch_name>
 ```
