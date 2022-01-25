@@ -155,11 +155,19 @@ git rm
 git rm --cached
 ```
 
-### 5.8 Removing changes after a commit
+### 5.8 Saving uncommitted modifications using git-stash
+
+* git-stash can be used to to save the modifications without a commit when you want to move out of the current branch.
+* You can reapply the changes whenever you required.
+
 
 ```sh
 git stash
 ```
+
+[Read more](https://git-scm.com/docs/git-stash)
+
+
 
 ### 5.9 Moving a file (renaming)
 
