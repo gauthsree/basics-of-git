@@ -220,25 +220,51 @@ git checkout <branch_name>
 git merge <branch_name>
 ```
 
-### 5.15 Undo in git : using git reset, git restore and git revert 
+### 5.15 Undo options in git.
 
+#### 5.15.1 Removing changes in untracked files
+
+* `Undo changes in your working area to untracked files (if you have'nt added files to index(unstaged) using git add)`
+* `You can delete / restore the changes manually. But git will still identify this as modification.`
 
 ```sh
-git reset HEAD <file_name>
+git checkout -- <file_name>	# Discard changes made in a single file.
+git checkout .			# Discard all the changes.
+```
+
+#### 5.15.2 Discarding staged changes.
+`Undo changes made in your working area for tracked files (if you have added files to the index(staged) using git add)`
+
+`using git-reset`
+
+```sh
+git reset HEAD <file_name>	# For single file.
+git reset HEAD *		# For all files.
+
+```
+
+`using git-restore`
+
+```sh
 git restore --staged <file_name>
-
 ```
+
+#### 5.15.3 Discarding commit from local repo.
+
+* `Undo commits made in your working area (if you have committed files using git commit)`
 
 ```sh
-git reset --soft
-git reset --hard
+git reset HEAD^	
 ```
+* Where ^ is the commit number , eg: ~1 for deleting last commit, ~2 for deleting last two commits.
 
-[man git-reset](https://git-scm.com/docs/git-reset)
-[man git-restore](https://git-scm.com/docs/git-restore)
-[man git-revert](https://git-scm.com/docs/git-revert)
 
-[Read more ](https://git-scm.com/docs/git#_reset_restore_and_revert)
+[git-reset](https://git-scm.com/docs/git-reset) |
+[git-restore](https://git-scm.com/docs/git-restore) |
+[git-revert](https://git-scm.com/docs/git-revert) |
+
+[reset_restore_and_revert](https://git-scm.com/docs/git#_reset_restore_and_revert) |
+[undo posibilities in git](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/) |
 
 ## 6. Moving your local repository to server (remote repository)
 
@@ -284,3 +310,4 @@ git clone <github_link>
 ## References
 
 * https://www.javatpoint.com/git
+* https://docs.gitlab.com/ee/topics/git/
