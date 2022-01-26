@@ -252,9 +252,9 @@ git remote rename <existing_remote_repo_name>  <new_remote_repo_name>
 git remote rm <name_of_the_remote_repo>
 ```
 
-## 7. Moving your remote repository to your local machine (clonning)
+## 7. Moving your remote repository to your local machine (cloning remote repo)
 
-* If project private then you have to give your credential to clone the remote repo
+* If project private then you have to give your credential to clone the remote repo.
 * If the project is a private project then you should be added as a collaborator.
 
 ```sh
