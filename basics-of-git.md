@@ -220,6 +220,46 @@ git checkout <branch_name>
 git merge <branch_name>
 ```
 
+## 6. Moving your local repository to server (remote repository)
+
+### 6.1 Add a remote repository to your git
+
+```sh
+git remote add <repo_nickname>  <link_of_the_remote_repo>
+git remote add <test_github> <link_of_the_remote_repo>
+```
+
+### 6.2 View all added remote repository
+
+```sh
+git remote
+```
+
+### 6.3 View link of the added remote repo
+
+```
+git remote -v
+```
+
+### 6.4 Renaming a existing remote repository
+
+```sh
+git remote rename <existing_remote_repo_name>  <new_remote_repo_name>
+```
+### 6.5 Remove an existing repository from local repository.
+
+```sh
+git remote rm <name_of_the_remote_repo>
+```
+
+## 7. Moving your remote repository to your local machine (clonning)
+
+* If project private then you have to give your credential to clone the remote repo
+* If the project is a private project then you should be added as a collaborator.
+
+```sh
+git clone <github_link>
+```
 
 ## References
 
