@@ -1,6 +1,6 @@
 > Written by Gautham S, CSIR-NIO, Goa, India ;
-> Written on : 22/Jan/2021 ; 
-> Modified on : 24/Jan/2021
+> Written on : 22/Jan/2022 ; 
+> Modified on : 26/Jan/2022
 ___
 
 # Basics of git
@@ -44,7 +44,7 @@ git config --local user.email "email_id"
 ```
 
 ### 2.2. setting default editor for message.
-[See more](https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config#ch_core_editor)
+[Read more](https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config#ch_core_editor)
 
 ```sh
 git config --global core.editor "vim"
@@ -98,7 +98,7 @@ You can create a .gitignore file in your repository and add the name of the file
 
 #### .gitignore rules
 
-[see more](https://git-scm.com/docs/gitignore)
+[Read more](https://git-scm.com/docs/gitignore)
 
 
 ## 5 Creating a new git repository in your local machine
@@ -215,10 +215,30 @@ git checkout <branch_name>
 	* Resolve
 	* Subtree
 
-[see more](https://www.geeksforgeeks.org/merge-strategies-in-git/)
+[Read more](https://www.geeksforgeeks.org/merge-strategies-in-git/)
 ```sh
 git merge <branch_name>
 ```
+
+### 5.15 Undo in git : using git reset, git restore and git revert 
+
+
+```sh
+git reset HEAD <file_name>
+git restore --staged <file_name>
+
+```
+
+```sh
+git reset --soft
+git reset --hard
+```
+
+[man git-reset](https://git-scm.com/docs/git-reset)
+[man git-restore](https://git-scm.com/docs/git-restore)
+[man git-revert](https://git-scm.com/docs/git-revert)
+
+[Read more ](https://git-scm.com/docs/git#_reset_restore_and_revert)
 
 ## 6. Moving your local repository to server (remote repository)
 
