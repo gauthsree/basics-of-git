@@ -222,7 +222,7 @@ git merge <branch_name>
 
 ### 5.15 Undo options in git.
 
-#### 5.15.1 Discarding changes untracked changes
+#### 5.15.1 Discarding untracked changes
 
 * `Undo changes in your working area (if you have'nt added files to index(staging) using git add)`
 * `You can delete / restore the changes manually. But git will still identify this as modification.`
