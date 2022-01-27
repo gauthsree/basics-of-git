@@ -81,10 +81,6 @@ This will store the username and password in .git-credentials file.
 
 [Read more](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage)
 
-
-
-
-
 ## 3. Help in git
 
 #### There are three ways to see the help.
@@ -99,7 +95,6 @@ You can create a .gitignore file in your repository and add the name of the file
 #### .gitignore rules
 
 [Read more](https://git-scm.com/docs/gitignore)
-
 
 ## 5 Creating a new git repository in your local machine
 
@@ -167,7 +162,6 @@ git stash pop
 ```
 
 [Read more](https://git-scm.com/docs/git-stash)
-
 
 
 ### 5.9 Moving a file (renaming)
@@ -259,14 +253,11 @@ git restore --staged <file_name>
 git reset HEAD^	
 ```
 * Where ^ is the commit number , eg: ~1 for deleting last commit, ~2 for deleting last two commits.
-
-
-### 5.15.4 Discarding a specific commit from local and remote repository.
+#### 5.15.4 Discarding a specific commit from local and remote repository.
 
 ```sh
 git revert <commit_id>
 ```
-
 
 [git-reset](https://git-scm.com/docs/git-reset) |
 [git-restore](https://git-scm.com/docs/git-restore) |
@@ -307,7 +298,9 @@ git remote rename <existing_remote_repo_name>  <new_remote_repo_name>
 git remote rm <name_of_the_remote_repo>
 ```
 
-## 7. Moving your remote repository to your local machine (cloning remote repo)
+## 7 Working with remote repository
+
+### 7.1 Moving your remote repository to  a local machine (cloning remote repo).
 
 * If project private then you have to give your credential to clone the remote repo.
 * If the project is a private project then you should be added as a collaborator.
@@ -316,7 +309,49 @@ git remote rm <name_of_the_remote_repo>
 git clone <github_link>
 ```
 
+### 7.2 Updating your local repository (fetching)
+
+```sh
+git fetch <repo_link> <branch_name> 
+```
+
+### 7.3 git pull
+
+
+
+## 8. Working in a team.
+
+### 8.1 Standard way to contribute in a small team project (Normal workflow).
+
+* Step 1 : Clone remote repository to your local machine.
+* Step 2 : Create a new branch.
+* Step 3 : Modify your newly created branch.
+* Step 4 : Now pull code from remote repo to local repo to incorporate the latest changes in the server (fetch + merge).
+* Step 5 : Merge the latest code to your branch
+* Step 6 : Push your branch to the remote repo
+* Step 7 : Now open your remote server (github, gitlab etc) and create a "pull request" for comparing the branches.
+* Step 8 : Now the admin can check your pull request and can take a decision.
+ 
+
+### 8.2 Workflows in git.
+
+[Comparing work flows](https://www.atlassian.com/git/tutorials/comparing-workflows)
+[What is git work flow](https://about.gitlab.com/topics/version-control/what-is-git-workflow/)
+[Git flows](https://docs.github.com/en/get-started/quickstart/github-flow)
+ 
+## 9. Contribute to an open source project.
+
+* Step 1 : Fork an open source project to your account that you wish to contribute.
+* Step 2 : Clone the forked remote repository to your local machine.
+* Step 3 : Create a new branch.
+* Step 4 : Modify your newly created branch.
+* Step 5 : Push your branch to your remote account.
+* Step 6 : Now open your remote server (github, gitlab etc) and create a "pull request" for comparing the branches.
+
+## 9. Options in github.
+
 ## References
 
 * https://www.javatpoint.com/git
 * https://docs.gitlab.com/ee/topics/git/
+* https://git-scm.com/book/en/v2
