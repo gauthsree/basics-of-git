@@ -222,9 +222,9 @@ git merge <branch_name>
 
 ### 5.15 Undo options in git.
 
-#### 5.15.1 Removing changes in untracked files
+#### 5.15.1 Discarding changes untracked changes
 
-* `Undo changes in your working area to untracked files (if you have'nt added files to index(unstaged) using git add)`
+* `Undo changes in your working area (if you have'nt added files to index(staging) using git add)`
 * `You can delete / restore the changes manually. But git will still identify this as modification.`
 
 ```sh
@@ -233,7 +233,7 @@ git checkout .			# Discard all the changes.
 ```
 
 #### 5.15.2 Discarding staged changes.
-`Undo changes made in your working area for tracked files (if you have added files to the index(staged) using git add)`
+`Undo changes made in your staging area (if you have added files to the index(staged) using git add)`
 
 `using git-reset`
 
@@ -251,12 +251,21 @@ git restore --staged <file_name>
 
 #### 5.15.3 Discarding commit from local repo.
 
-* `Undo commits made in your working area (if you have committed files using git commit)`
+* `Undo commits (if you have committed files using git commit)`
+* `This methde is useful for deleteing last few commits. You cant discard a specific commit using this method.`
+* `This methode can be used to remove commits that are not pushed to the server. You can't use it for discarding a commit that you already pushed.`
 
 ```sh
 git reset HEAD^	
 ```
 * Where ^ is the commit number , eg: ~1 for deleting last commit, ~2 for deleting last two commits.
+
+
+### 5.15.4 Discarding a specific commit from local and remote repository.
+
+```sh
+git revert <commit_id>
+```
 
 
 [git-reset](https://git-scm.com/docs/git-reset) |
