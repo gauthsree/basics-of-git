@@ -348,7 +348,7 @@ git fetch <repo_link> <branch_name>
 * Step 5 : Push your branch to your remote account.
 * Step 6 : Now open your remote server (github, gitlab etc) and create a "pull request" for comparing the branches.
 
-## 9. Options in github.
+## 10. Options in github.
 
 ## References
 
