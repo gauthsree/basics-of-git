@@ -298,6 +298,13 @@ git remote rename <existing_remote_repo_name>  <new_remote_repo_name>
 git remote rm <name_of_the_remote_repo>
 ```
 
+### 6.6 Move your local repository to remote repository
+
+```sh
+git push <repo_nickname> <branch_to_be_moved>  
+```	
+	
+
 ## 7 Working with remote repository
 
 ### 7.1 Moving your remote repository to  a local machine (cloning remote repo).
